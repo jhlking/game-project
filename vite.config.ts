@@ -6,7 +6,7 @@ import traeBadgePlugin from 'vite-plugin-trae-solo-badge'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/game-project/',
+  base: process.env.NODE_ENV === 'production' ? '/game-project/' : '/',
   build: {
     sourcemap: 'hidden',
   },
