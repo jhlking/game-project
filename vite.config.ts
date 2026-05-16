@@ -9,7 +9,6 @@ export default defineConfig({
   base: '/game-project/',
   build: {
     sourcemap: 'hidden',
-    outDir: '.',
   },
   plugins: [
     vue(),
